@@ -1,0 +1,227 @@
+/* Футер */
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  color: var(--primory-white-color);
+
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-footer .accent {
+  color: var(--accent-color);
+}
+.address {
+  color: var(--primory-white-color);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+}
+.contact {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+}
+
+.social-networks-title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--primory-white-color);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.footer .container {
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.join-to-us {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.footer-wrapper {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+.footer-social-networks {
+  margin-left: 70px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 234px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 70px;
+  }
+}
+
+.form-field {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   margin-left: 0;
+  //   margin-top: 60px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+.label-footer {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 0;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.button-subscribe {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primory-white-color);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.button-subscribe::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-image: url(../images/icons/icon-send.svg);
+}
+.footer-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primory-white-color);
+}
+
+.field-input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  width: 100%;
+  max-width: 358px;
+  height: 50px;
+  background-color: #2f303a;
+  color: var(--primory-white-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
+}
+
+/* footer icons */
+.social-networks {
+  display: flex;
+  justify-content: center;
+}
+.social-networks-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--primory-white-color);
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-networks-item {
+  margin-right: 10px;
+}
+
+.social-networks-icon:hover {
+  background-color: var(--accent-color);
+}
+.social-networks-icon:focus {
+  background-color: var(--accent-color);
+}

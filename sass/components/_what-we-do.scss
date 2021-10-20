@@ -1,0 +1,60 @@
+/* Секция work*/
+.what-we-do {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+.what-we-do .list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.what-we-do {
+  padding-bottom: 94px;
+}
+
+.product-thumb {
+  position: relative;
+  width: 370px;
+  height: 293.98px;
+  z-index: 1;
+}
+
+.product-menu {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0%;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.product-menu-text {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.what-we-do-title {
+  margin-top: 0%;
+  margin-bottom: 50px;
+  font-weight: b700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
