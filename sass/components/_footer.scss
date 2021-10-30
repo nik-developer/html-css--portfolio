@@ -219,9 +219,11 @@
   margin-right: 10px;
 }
 
-.social-networks-icon:hover {
-  background-color: var(--accent-color);
-}
+.social-networks-icon:hover,
 .social-networks-icon:focus {
   background-color: var(--accent-color);
+  transition-duration: 500ms;
 }
+// .social-networks-icon:focus {
+//   background-color: var(--accent-color);
+// }

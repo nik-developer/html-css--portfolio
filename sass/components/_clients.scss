@@ -58,7 +58,9 @@
 .icon-clients:hover .svg-icon,
 .icon-clients:focus .svg-icon {
   fill: var(--accent-color);
+  transition-duration: 500ms;
 }
 .icon-clients:hover {
   border-color: var(--accent-color);
+  transition-duration: 500ms;
 }

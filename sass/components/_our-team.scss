@@ -117,4 +117,5 @@
 .networks-link:focus {
   fill: var(--primory-white-color);
   background-color: var(--accent-color);
+  transition-duration: 1s;
 }

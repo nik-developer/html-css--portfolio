@@ -8,12 +8,13 @@
   // overflow: scroll;
   background: rgba(0, 0, 0, 0.2);
   z-index: 2;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
+  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
@@ -59,7 +60,7 @@
 .close-button:hover svg,
 .close-button:focus svg {
   fill: var(--accent-color);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .js-speaker-form {
   top: 0%;
@@ -67,7 +68,7 @@
 }
 textarea {
   resize: none;
-  outline: turquoise;
+  outline: var(--accent-color);
 }
 .form {
   position: relative;
@@ -113,13 +114,14 @@ textarea {
 }
 .form-item:hover .icon {
   fill: var(--accent-color);
+  transition-duration: 250ms;
 }
 .form-label {
   position: absolute;
   top: 50%;
   left: 40px;
   transform: translateY(-50%);
-  transition: transform 250ms linear;
+  transition-duration: 250ms;
 }
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
@@ -140,6 +142,7 @@ textarea {
   outline: solid 5px;
   border-color: var(--accent-color);
   outline: var(--accent-color);
+  transition-duration: 1000ms;
 }
 .agree-label {
   font-weight: 400;

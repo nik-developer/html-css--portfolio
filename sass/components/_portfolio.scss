@@ -9,20 +9,31 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: -15px;
+  }
 }
 
-.example-item .image {
-  width: 100%;
-}
+// .example-item .img {
+//   width: 100%;
+// }
 .example-item {
+  margin-bottom: 30px;
   background: var(--primory-white-color);
   border: 1px solid #eeeeee;
-
-  margin-bottom: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 15px;
+    width: calc(50% - 30px);
+  }
 }
 
 .example-item:hover .example-thumb::before {
   transform: translateY(0);
+  // transition-duration: 1000ms;
 }
 
 .example-item:hover {
@@ -35,9 +46,10 @@
 }
 
 .example-thumb {
-  display: flex;
-  align-items: center;
   position: relative;
+  display: flex;
+
+  align-items: center;
   overflow: hidden;
 }
 
@@ -50,7 +62,7 @@
   background: rgba(33, 150, 243, 0.9);
 
   transform: translateY(110%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 .example-text {
@@ -71,7 +83,7 @@
 
   color: #ffffff;
   transform: translateY(150%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 .list-types {
   padding: 0 24px;
@@ -90,19 +102,33 @@
 
 .menu .type-button-list {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   padding-top: 94px;
   padding-bottom: 50px;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    // display: flex;
+    // flex-direction: column;
+    // width: 50%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    // flex-direction: column;
+    // width: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    // flex-direction: column;
+    // width: 50%;
   }
 }
 .menu .button {
   margin-right: 8px;
-}
-.menu .button:nth-last-child(5n) {
-  margin-right: 0;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 /* Портфолио: наши проекты */
@@ -116,6 +142,7 @@
 
 /* Радио кнопки */
 .type-button-list .button {
+  // margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -127,7 +154,7 @@
   border-radius: 4px;
   text-align: center;
   letter-spacing: 0.03em;
-  border-color: #f5f4fa;
+  border: none;
   background: #f5f4fa;
   color: var(--title-text-color);
   @media screen and (min-width: 768px) {
@@ -141,4 +168,5 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   background-color: var(--accent-color);
+  transition-duration: 500ms;
 }
