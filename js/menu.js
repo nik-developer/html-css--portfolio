@@ -1,6 +1,4 @@
 // modal/open/close
-
-
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),
@@ -14,8 +12,6 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
-
-
 
 // mobile-menu
 const menuBtn = document.querySelector('.menu-btn-js');
@@ -36,7 +32,6 @@ function toggleMenuHandler() {
 
 window.addEventListener('resize', getTabletMenuSize);
 function getTabletMenuSize(event){
-  console.log(event.target);
   const currentScreenWidth = event.target.screen.width;
   if(currentScreenWidth >= 768){
     mobileMenuRef.style.display = "flex";
@@ -44,32 +39,15 @@ function getTabletMenuSize(event){
     return;
   }
   if(currentScreenWidth < 768){
-    console.log('here');
     mobileMenuRef.style.display = "block";
     mobileMenuRef.style.display = "none";
     const isOpenMenu = menuBtn.classList.contains('is-open');
     if(isOpenMenu) {
-      console.log('here');
       menuBtn.classList.remove('is-open');
     }
     return;
   }
 }
-
-
-
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector('[data-modal-open]'),
-//     closeModalBtn: document.querySelector('[data-modal-close]'),
-//     modal: document.querySelector('[data-modal]'),
-//   };
-//   refs.openModalBtn.addEventListener('click', toggleModal);
-//   refs.closeModalBtn.addEventListener('click', toggleModal);
-//   function toggleModal() {
-//     refs.modal.classList.toggle('is-hidden');
-//   }
-// })();
 
 // placeholder
 document.querySelectorAll('.form-input').forEach(element => {
