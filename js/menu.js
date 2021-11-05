@@ -20,7 +20,7 @@ menuBtn.addEventListener('click', toggleMenuHandler);
 function toggleMenuHandler() {
     menuBtn.classList.toggle('is-open');
     const isOpenMenu = menuBtn.classList.contains('is-open');
-    console.log(isOpenMenu);
+    // console.log(isOpenMenu);dd
     if (isOpenMenu) {
         mobileMenuRef.style.display = "block";
         return
